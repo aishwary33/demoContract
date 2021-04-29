@@ -8,11 +8,12 @@ contract TodoList {
         string content;
         bool completed;
     }
+
     mapping(uint256 => Task) public tasks;
 
-    constructor() public{
-    createTask("Hi Aish")
-    }
+   constructor() public{
+       createTask("Hi!! Aish");
+   }
 
     function createTask(string memory _content) public {
         taskCount++;
